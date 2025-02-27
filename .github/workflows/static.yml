@@ -27,8 +27,9 @@ jobs:
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v3
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+      - uses: actions/upload-artifact@v4
+    name: Build
+    path: dist
         with:
           path: "."  # Upload entire repository
 
