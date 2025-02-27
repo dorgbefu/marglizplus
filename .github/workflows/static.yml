@@ -26,13 +26,12 @@ jobs:
         uses: actions/checkout@v4  # ✅ Use latest version
 
       - name: Setup GitHub Pages
-        uses: actions/configure-pages@v3 
-# ✅ Updated to latest
+        uses: actions/configure-pages@v3  # ✅ Updated to latest
+
       - name: Upload artifact
-     
-        uses: actions/upload-artifact@v3 # ✅ Correct action for GitHub Pages
+        uses: actions/upload-pages-artifact@v2  # ✅ Correct action for GitHub Pages
         with:
-          path: "."
+          path: "."  # ✅ Upload entire repo (adjust if needed)
 
       - name: Deploy to GitHub Pages
         id: deployment
