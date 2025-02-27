@@ -29,7 +29,7 @@ jobs:
         uses: actions/configure-pages@v3  # ✅ Updated to v3
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2  # ✅ Ensure v2 works
+        uses: actions/upload-pages-artifact@v1  # ✅ Ensure v2 works
         with:
           path: "."
 
